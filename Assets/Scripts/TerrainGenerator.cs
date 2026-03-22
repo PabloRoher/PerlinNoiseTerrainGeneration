@@ -6,6 +6,8 @@ public class TerrainGenerator : MonoBehaviour
     public int mapHeight;
     public float noiseScale;
 
+    public bool autoUpdate;
+
     public void GenerateTerrain()
     {
         float[,] noiseMap = Terrain.GenerateNoiseMap(mapWidth, mapHeight, noiseScale);
